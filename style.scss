@@ -123,6 +123,7 @@ img {
     /*colors*/
   --second:#7A42F0;
   --primary: #5D22DB;
+  --primary-two: #1C274C;
   --bg-primary: #FFFFFF;
   --bg-base: #F4F4F4;
   --text-primary:#1A1A1A;
@@ -192,14 +193,17 @@ header{
           display: flex;
           align-items: center;
           .login-btn{
+            display: flex;
+            align-items: center;
             height: 44px;
             padding: 0 32px;
-            background-color: var(--primary);
-            color: var(--bg-primary);
+            background-color: var(--bg-primary);
+            color: var(--primary-two);
             border-radius: 4px;
             transition: var(--transition);
             &:hover{
-              background-color: var(--second);
+              background-color: var(--primary-two);
+              color: var(--bg-primary);
             }
             i{
               font-size: 14px;
