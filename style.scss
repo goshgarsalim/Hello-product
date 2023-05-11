@@ -71,14 +71,15 @@ img {
 /*RESET CSS*/
 /*GLOBAL */
 :root {
-  /*colors*/
+
+    /*colors*/
   --second:#7A42F0;
   --primary: #5D22DB;
   --bg-primary: #FFFFFF;
   --bg-base: #F4F4F4;
   --text-primary:#1A1A1A;
   --transition:300ms all ease-in-out;
-  /*fonts*/
+    /*fonts*/
   --text-xs-size: 12px;
   --text-xs-l-height: 16px;
   --text-sm-size: 14px;
@@ -105,48 +106,61 @@ img {
   --text-8xl-l-height: 1;
   --text-9xl-size: 128px;
   --text-9xl-l-height: 1;
+
 }
 
+
+
+
 /*PROJE*/
-header {
-  height: 89px;
+
+
+header{
+    height: 89px;
+    .navbar{
+        height: 89px;
+        .navbar-brand{
+            img{
+                width: 160px;
+                height: auto;
+                -o-object-fit: cover;
+                   object-fit: cover;
+            }
+        }
+        .navbar-menu{
+             margin-left: 130px;
+            .navbar-nav{
+                flex-direction: row !important;
+                .nav-item{
+                    &:not(:last-child){
+                        margin-right: 37px;
+                    }
+                }
+            }
+        }
+    }
 }
-header .navbar {
-  height: 89px;
-}
-header .navbar .navbar-brand img {
-  width: 160px;
-  height: auto;
-  -o-object-fit: cover;
-  object-fit: cover;
-}
-header .navbar .navbar-menu {
-  margin-left: 130px;
-}
-header .navbar .navbar-menu .navbar-nav {
-  flex-direction: row !important;
-}
-header .navbar .navbar-menu .navbar-nav .nav-item:not(:last-child) {
-  margin-right: 37px;
-}
+
+
+
 
 /*MOBIL MEDIA*/
 @media only screen and (max-width: 1200px) {
-  .navbar-menu {
+  .navbar-menu{
     margin-left: 30px;
   }
 }
 @media only screen and (max-width: 992px) {
-  .navbar-nav {
+  .navbar-nav{
     flex-direction: column !important;
   }
-  .navbar-toggler {
+  .navbar-toggler{
     display: block;
   }
-  .navbar-menu {
+  .navbar-menu{
     display: none;
   }
-  .right-menu {
+  .right-menu{
     display: none;
   }
-}/*# sourceMappingURL=style.css.map */
+}
