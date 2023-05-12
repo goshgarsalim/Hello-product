@@ -615,6 +615,97 @@ header .navbar .navbar-toggler {
   display: none;
 }
 
+footer {
+  background: var(--bg-primary);
+}
+footer .footer-content {
+  padding: 115px 0 110px;
+  border-bottom: 1px solid #EBEBEB;
+}
+footer .footer-content .footer-links {
+  font-size: var(--text-lg-size);
+  line-height: var(--text-base-l-height);
+  font-weight: 600;
+  color: var(--text-primary);
+}
+footer .footer-content ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+footer .footer-content ul li:hover a {
+  color: var(--primary);
+}
+footer .footer-content ul li a {
+  font-size: var(--text-base-size);
+  line-height: var(--text-base-l-height);
+  font-weight: 500;
+  color: #8D8D8D;
+  transition: var(--transition);
+}
+footer .footer-content .subscribe-email {
+  margin-top: 12px;
+}
+footer .footer-content .subscribe-email input {
+  padding: 18px;
+  background: var(--bg-base);
+  border: none;
+  color: var(--text-primary);
+  border-radius: 4px 0 0 4px;
+}
+footer .footer-content .subscribe-email input::-moz-placeholder {
+  color: #BBBBBB;
+}
+footer .footer-content .subscribe-email input::placeholder {
+  color: #BBBBBB;
+}
+footer .footer-content .subscribe-email .subscribe-now {
+  padding: 18px 24px;
+  border-radius: 4px;
+  background: var(--primary);
+  color: var(--bg-primary);
+  transition: var(--transition);
+}
+footer .footer-content .subscribe-email .subscribe-now:hover {
+  background: var(--second);
+}
+footer .all-right-reserved {
+  padding: 32px 0;
+  display: flex;
+  align-items: center;
+}
+footer .all-right-reserved .navbar-brand img {
+  width: 160px;
+  height: auto;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+footer .all-right-reserved .all-right-text {
+  margin-left: 120px;
+}
+footer .all-right-reserved .all-right-text span {
+  font-size: var(--text-base-size);
+  line-height: var(--text-sm-l-height);
+  font-weight: 400;
+  color: #8D8D8D;
+}
+footer .all-right-reserved .bank-cards {
+  margin-left: auto;
+}
+footer .all-right-reserved .bank-cards ul {
+  display: flex;
+  align-items: center;
+}
+footer .all-right-reserved .bank-cards ul li:not(:first-child) {
+  margin-left: 10px;
+}
+footer .all-right-reserved .bank-cards ul li img {
+  width: 39px;
+  height: 39px;
+  min-width: 39px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: var(--border-radius);
+}
+
 /*MOBIL MEDIA*/
 @media only screen and (max-width: 1200px) {
   header .navbar .navbar-menu {
@@ -633,5 +724,11 @@ header .navbar .navbar-toggler {
   }
   header .navbar .navbar-toggler {
     display: block;
+  }
+  footer .all-right-reserved {
+    flex-direction: column;
+  }
+  footer .all-right-reserved .bank-cards {
+    margin: 0;
   }
 }/*# sourceMappingURL=style.css.map */

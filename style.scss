@@ -638,7 +638,100 @@ header{
 }
 
 footer{
+  background: var(--bg-primary);
+  .footer-content{
 
+    padding:115px 0 110px ;
+    border-bottom: 1px solid #EBEBEB;
+    .footer-links{
+      font-size: var(--text-lg-size);
+      line-height: var(--text-base-l-height);
+      font-weight: 600;
+      color: var(--text-primary);
+    }
+    ul{
+      li{
+        &:not(:last-child){
+          margin-bottom: 10px;
+        }
+        &:hover a{
+          color: var(--primary);
+        }
+        a{
+          font-size: var(--text-base-size);
+          line-height: var(--text-base-l-height);
+          font-weight: 500;
+          color: #8D8D8D;
+          transition: var(--transition);
+        }
+      }
+    }
+    .subscribe-email{
+        margin-top: 12px;
+      input{
+        padding: 18px;
+        background: var(--bg-base);
+        border: none;
+        color: var(--text-primary);
+        border-radius: 4px 0 0 4px;
+        &::placeholder{
+          color: #BBBBBB;
+        }
+      }
+      .subscribe-now{
+        padding: 18px 24px;
+        border-radius: 4px;
+        background: var(--primary);
+        color: var(--bg-primary);
+        transition: var(--transition);
+        &:hover{
+          background: var(--second);
+        }
+      }
+    }
+  }
+  .all-right-reserved{
+    padding: 32px 0;
+    display: flex;
+    align-items: center;
+    
+    .navbar-brand{
+      img{
+        width: 160px;
+        height: auto;
+        -o-object-fit: cover;
+           object-fit: cover;
+    }
+    }
+    .all-right-text{
+      margin-left: 120px;
+      span{
+        font-size: var(--text-base-size);
+        line-height: var(--text-sm-l-height);
+        font-weight: 400;
+        color: #8D8D8D;
+      }
+    }
+    .bank-cards{
+      margin-left: auto;
+      ul{
+        display: flex;
+        align-items: center;
+        li{
+          &:not(:first-child){
+            margin-left: 10px;
+          }
+          img{
+            width: 39px;
+            height: 39px;
+            min-width: 39px;
+            object-fit: cover;
+            border-radius: var(--border-radius);
+          }
+        }
+      }
+    }
+  }
 }
 
 
@@ -676,7 +769,14 @@ footer{
       }
     }
   }
- 
+ footer{
+  .all-right-reserved{
+    flex-direction: column;
+    .bank-cards{
+      margin: 0;
+    }
+  }
+ }
 }
 
 
