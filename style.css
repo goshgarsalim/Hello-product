@@ -176,28 +176,23 @@ body {
 .shop-minicart.active-cart {
   right: 0;
 }
-.shop-minicart .shop-minicart-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 25px 8px 25px 12px;
-}
-.shop-minicart .shop-minicart-header nav {
+.shop-minicart nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  padding: 25px 8px 25px 12px;
 }
-.shop-minicart .shop-minicart-header nav .shop-minicart-headline {
+.shop-minicart nav .shop-minicart-headline {
   display: inline-flex;
   align-items: center;
 }
-.shop-minicart .shop-minicart-header nav .shop-minicart-headline .shop-minicart-label {
+.shop-minicart nav .shop-minicart-headline .shop-minicart-label {
   font-size: var(--text-xl-size);
   color: var(--primary-two);
   font-weight: 600;
 }
-.shop-minicart .shop-minicart-header nav .shop-minicart-headline .shop-minicart-value {
+.shop-minicart nav .shop-minicart-headline .shop-minicart-value {
   font-size: var(--text-xl-size);
   background: var(--primary-two);
   border-radius: 50%;
@@ -210,7 +205,7 @@ body {
   min-height: 28px;
   margin-left: 8px;
 }
-.shop-minicart .shop-minicart-header nav .shop-minicart-close {
+.shop-minicart nav .shop-minicart-close {
   display: flex;
   align-items: center;
   background: var(--bg-primary);
@@ -218,8 +213,11 @@ body {
   font-size: var(--text-3xl-size);
 }
 .shop-minicart .shop-minicart-sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   height: 100%;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 .shop-minicart .shop-minicart-sidebar .shop-minicart-inner {
   position: relative;
