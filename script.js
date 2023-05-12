@@ -36,9 +36,15 @@ overlay_cart.addEventListener("click", () =>{
 });
 
 search_btn.addEventListener("click", () =>{
-    search_box.classList.toggle('search-active');
+    search_box.classList.add('search-active');
+});
+search_btn.addEventListener("click", () =>{
+    overlay_cart.classList.add('overlay-active');
 });
 search_close.addEventListener("click", () =>{
     search_box.classList.remove('search-active');
+});
+search_close.addEventListener("click", () =>{
+    overlay_cart.classList.remove('overlay-active');
 });
 

@@ -173,7 +173,7 @@ body{
   left: 0;
   bottom: 0;
   right: 0;
-  background-color: rgba(#000, 0.25);
+  background-color: rgba(#000, 0.8);
   animation: shop-fade-minicart 0.5s;
   z-index: 4;
   transition: 500ms all;
@@ -185,7 +185,7 @@ body{
   width: 400px;
   height: 100%;
   background: var(--bg-primary);
-  z-index: 5;
+  z-index: 10;
   transition: 500ms all;
   &.active-cart{
     right: 0;
@@ -402,9 +402,9 @@ body{
   left: 50%;
   width: 560px;
   max-width: 560px;
-  background-color: rgba(#fff, 1);
+  background-color: var(--bg-primary);
   animation: shop-fade-minicart 0.5s;
-  z-index: 6;
+  z-index: 5;
   transition: 500ms all;
   transform: translateX(-50%);
   &.search-active{
@@ -455,6 +455,8 @@ body{
   }
   .recent-content{
     padding: 16px 35px 36px 38px;
+    max-height: 300px;
+    overflow-y: auto;
     h6{
       font-weight: 600;
       font-size: var(--text-base-size);
@@ -635,7 +637,9 @@ header{
     
 }
 
+footer{
 
+}
 
 
 
