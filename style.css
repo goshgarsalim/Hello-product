@@ -127,14 +127,6 @@ img {
   --bg-base: #F4F4F4;
   --text-primary:#1A1A1A;
   --transition:300ms all ease-in-out;
-  /*font weight*/
-  --font-weight-xs: 300;
-  --font-weight-sm: 400;
-  --font-weight-base: 500;
-  --font-weight-lg: 600;
-  --font-weight-xl: 700;
-  --font-weight-2xl: 800;
-  --font-weight-3xl: 900;
   /*font size*/
   --text-xs-size: 12px;
   --text-xs-l-height: 16px;
@@ -191,7 +183,7 @@ header .navbar .navbar-menu .navbar-nav {
 }
 header .navbar .navbar-menu .navbar-nav .nav-item .nav-link {
   font-size: var(--text-sm-size);
-  font-weight: var(--font-weight-base);
+  font-weight: 500;
   line-height: var(--text-base-l-height);
   color: var(--text-primary);
 }
@@ -267,11 +259,11 @@ header .navbar .right-menu .cart-btn .cart-dropdown {
   top: 0;
   right: 0;
   width: 312px;
-  height: 490px;
+  height: auto;
   transform: translateY(70px);
   border-radius: 6px;
   background-color: var(--bg-primary);
-  padding: 26px 12px;
+  padding: 26px 8px 26px 12px;
   transition: var(--transition);
 }
 header .navbar .right-menu .cart-btn .cart-dropdown ul {
@@ -284,6 +276,9 @@ header .navbar .right-menu .cart-btn .cart-dropdown ul li {
   height: 52px;
   border-radius: 4px;
   transition: var(--transition);
+}
+header .navbar .right-menu .cart-btn .cart-dropdown ul li:last-child {
+  margin-bottom: 30px;
 }
 header .navbar .right-menu .cart-btn .cart-dropdown ul li:not(:last-child) {
   margin-bottom: 14px;
@@ -317,14 +312,14 @@ header .navbar .right-menu .cart-btn .cart-dropdown ul li .cart-product-info {
   transition: var(--transition);
 }
 header .navbar .right-menu .cart-btn .cart-dropdown ul li .cart-product-info .cart-product-name {
-  font-size: var(--font-weight-sm);
-  font-weight: var(--font-weight-base);
+  font-size: var(--text-sm-size);
+  font-weight: 500;
   line-height: var(--text-sm-l-height);
   color: #313131;
 }
 header .navbar .right-menu .cart-btn .cart-dropdown ul li .cart-product-info .cart-product-price {
-  font-size: var(--font-weight-xs);
-  font-weight: var(--font-weight-base);
+  font-size: var(--text-xs-size);
+  font-weight: 500;
   line-height: var(--text-xs-l-height);
   color: #BBBBBB;
 }
@@ -342,6 +337,70 @@ header .navbar .right-menu .cart-btn .cart-dropdown ul li .cart-product-deleted 
   background: transparent;
   margin: 0 17px 0 13px;
   transition: var(--transition);
+}
+header .navbar .right-menu .cart-btn .cart-dropdown .cart-subtotal {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 9px;
+  margin-bottom: 28px;
+  border-bottom: 1px solid #EBEBEB;
+}
+header .navbar .right-menu .cart-btn .cart-dropdown .cart-subtotal .cart-subtotal-text {
+  color: #313131;
+  font-weight: 600;
+  font-size: var(--text-sm-size);
+  margin-left: 7px;
+}
+header .navbar .right-menu .cart-btn .cart-dropdown .cart-subtotal .cart-subtotal-price {
+  color: var(--primary-two);
+  font-weight: 600;
+  font-size: var(--text-sm-size);
+  margin-right: 20px;
+}
+header .navbar .right-menu .cart-btn .cart-dropdown .view-checkout-btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .navbar .right-menu .cart-btn .cart-dropdown .view-checkout-btns .view-cart {
+  background: var(--primary);
+  color: var(--bg-primary);
+  padding: 11px 15px;
+  border-radius: 4px;
+  font-size: var(--text-xs-size);
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  margin-right: 5px;
+  transition: var(--transition);
+}
+header .navbar .right-menu .cart-btn .cart-dropdown .view-checkout-btns .view-cart:hover {
+  background: var(--second);
+}
+header .navbar .right-menu .cart-btn .cart-dropdown .view-checkout-btns .view-cart i {
+  font-size: 10px;
+  margin-left: 7px;
+}
+header .navbar .right-menu .cart-btn .cart-dropdown .view-checkout-btns .checkout-cart {
+  background: var(--bg-primary);
+  color: #191919;
+  padding: 11px 15px;
+  border-radius: 4px;
+  font-size: var(--text-xs-size);
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid #EBEBEB;
+  margin-left: 5px;
+  transition: var(--transition);
+}
+header .navbar .right-menu .cart-btn .cart-dropdown .view-checkout-btns .checkout-cart:hover {
+  background-color: var(--second);
+}
+header .navbar .right-menu .cart-btn .cart-dropdown .view-checkout-btns .checkout-cart i {
+  font-size: 10px;
+  margin-left: 7px;
 }
 header .navbar .right-menu .cart-btn:hover {
   background-color: var(--primary-two);
