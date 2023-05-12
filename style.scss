@@ -163,7 +163,18 @@ body{
   background: red !important;
 }
 
-
+.overlay-cart.overlay-active{
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(#000, 0.25);
+  animation: shop-fade-minicart 0.5s;
+  z-index: 4;
+  transition: 500ms all;
+}
 .shop-minicart{
   position: fixed;
   top: 0;
@@ -172,7 +183,7 @@ body{
   height: 100%;
   background: var(--bg-primary);
   z-index: 5;
-  transition: 600ms all;
+  transition: 500ms all;
   &.active-cart{
     right: 0;
   }
